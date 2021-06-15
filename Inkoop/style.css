@@ -1,0 +1,128 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    min-height: 100px;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 10% 40% 50%;
+    grid-template-columns: 20% 60% 20% ;
+    grid-gap: 10px;
+}
+
+.icon{   
+    font-size: 30px;
+    grid-column: 1/-1;
+    
+}
+
+
+.nav{   
+    grid-row: 2/4;  
+    text-align: left;
+}
+.nav>ul>li{
+    list-style: none;
+    
+}
+.nav>ul>li>a{
+    text-decoration: tomato;
+    font-size: 14px;
+    
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    background-color: rgba(220, 20, 60, 0.904);
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+    border: 0px;
+    margin-left: 55px;
+}
+
+
+.header{   
+    
+    font-size: 60px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+
+.sidebar{
+    
+    font-size: 15px;
+    grid-column: 3/4;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-weight: 200;
+    
+   
+}
+.vl{
+    border-top: 6px solid rgb(245, 89, 154);
+    margin-top: 20px;
+    width: 90px;
+
+
+    
+}
+.container{
+    display: grid;
+    grid-column: 2/4;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;   
+}
+.card{
+    position: relative;
+    margin: 20px;
+    width: 160px;
+    height: 160px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.card:hover .content
+{
+    opacity: 1;
+}
+.imgbx{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.imgbx>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contentbx{
+    font-size: 12px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
